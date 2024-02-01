@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Members</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/about_.css">
+</head>
+
+<body>
+    <div class="team">
+        <h1>MEET OUR<span>TEAM</span> </h1>
+    </div>
+    <div class="container">
+        <div class="icon">
+            <div class="imgBx active" data-id="content1" style="--i:1;">
+                <img src="images/ahamad.jpg" alt="">
+                
+            </div>
+            <div class="imgBx "  data-id="content2" style="--i:2;">
+                <img src="images/arjita.jpg" alt="">
+            </div>
+            <div class="imgBx" data-id="content3" style="--i:3;">
+                <img src="images/Amit.png" alt="">
+            </div>
+            <div class="imgBx " data-id="content4" style="--i:4;">
+                <img src="images/archana.jpg" alt="">
+            </div>
+            <div class="imgBx " data-id="content5" style="--i:5;">
+                <img src="images/akarsh.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="contentBx active" id="content1">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/ahamad.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Team Leader <br><span>Web Developer</span></h2>
+                        <ul class="sci">
+                            <li><a href="https://www.linkedin.com/in/ahamad-ali-5b1418248/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx " id="content2">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/arjita.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Collaborator<br><span>Web Developer</span></h2>
+                        <ul class="sci">
+                            <li><a href="https://www.linkedin.com/in/arjita-sahu-578a53259/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx " id="content3">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/Amit.png" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Collaborator<br><span>Web Developer</span></h2>
+                        <ul class="sci">
+                            <li><a href="https://www.linkedin.com/in/amit-kumar-prajapati-2a168629b/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx " id="content4">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/archana.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Collaborator<br><span>Web Developer</span></h2>
+                        <ul class="sci">
+                            <li><a href="https://www.linkedin.com/in/archana-keshari-78b56227a/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx " id="content5">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="images/akarsh.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Collaborator<br><span>Web Developer</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function rotateCards() {
+            let imgBx = document.querySelectorAll('.imgBx');
+            let contentBx = document.querySelectorAll('.contentBx');
+    
+            let currentIndex = 0;
+    
+            function showCard(index) {
+                for (let i = 0; i < contentBx.length; i++) {
+                    contentBx[i].className = 'contentBx';
+                }
+                document.getElementById(imgBx[index].dataset.id).className = 'contentBx active';
+    
+                for (let i = 0; i < imgBx.length; i++) {
+                    imgBx[i].className = 'imgBx ';
+                }
+                imgBx[index].className = 'imgBx active';
+            }
+    
+            function nextCard() {
+                currentIndex = (currentIndex + 1) % imgBx.length;
+                showCard(currentIndex);
+            }
+    
+            // Automatically rotate to the next card every 3 seconds (adjust the interval as needed)
+            setInterval(nextCard, 3000);
+        }
+    
+        // Call the rotateCards function when the window is loaded
+        window.onload = rotateCards;
+    </script>
+    
+    
+</body>
+
+</html>
