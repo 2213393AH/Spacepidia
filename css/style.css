@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  /* Adjust the top position as needed */
+  left: 10px;
+  /* Adjust the left position as needed */
+  z-index: 1;
+}
+
+/* Add this CSS for the social media icons */
+/* Add this CSS for the social media icons and hover effect */
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+  /* Remove underline on hover */
+  transition: color 0.3s;
+  /* Smooth transition for the color change */
+}
+
+/* Hover effect: Change color to red on hover */
+.social-icons a:hover {
+  color: red;
+}
+
+
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 95px;
+  color: #fff;
+  margin-bottom: 50px;
+
+}
+
+.content a {
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+
+
+.grid-grid-four-column .f-about {
+  /* padding: 200px; */
+  text-align: left;
+  background-color: #a5bee1;
+  margin-right: 80%;
+}
+
+
+.content a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-background {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* CSS for mobile responsiveness */
+.container {
+  padding: 10px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Adjust styles for smaller screens (e.g., phones) */
+@media (max-width: 768px) {
+  .container {
+    padding: 5px;
+  }
+
+
+}
+
+/* Adjust styles for even smaller screens (e.g., very small phones) */
+
+
+.footer {
+  width: 100%;
+  background-color: rgb(37, 33, 33);
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content:center; */
+  flex-wrap: wrap;
+  height: 550px;
+  /* gap: 10rem; */
+
+}
+
+.footer_section1 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 2px;
+  flex-wrap: wrap;
+}
+
+.section1__buttonContainer {
+  padding: 5px;
+  width: 100px;
+  /* border: 1px solid gray; */
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+
+}
+
+.footer_section1 img {
+  width: 130px;
+
+}
+
+.section1__buttonContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  border-width: 2px;
+  height: 50px;
+}
+
+.navigation_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 10rem;
+  padding: 3rem 0;
+
+}
+
+.footer__link {
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.footer__link:hover {
+  color: rgb(185, 117, 117);
+}
+
+.section__links_container button {
+  background-color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.section__links_container button i {
+  /* color: white; */
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section__links_container button i:hover {
+  color: rgb(163, 94, 98);
+
+}
+
+.footer .navigation_container h5 {
+  color: rgb(207, 160, 160);
+  font-size: large;
+
+}
+
+.footer .navigation_container {
+  display: flex;
+}
+
+.link__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link__container h5 {
+  font: rgb(207, 160, 160);
+  /* color: aliceblue; */
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+}

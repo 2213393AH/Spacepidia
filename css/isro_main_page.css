@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif;
+  }
+  .container {
+    position: relative; /* Add position relative */
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(space_bg.png.jpeg);
+      background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+  }
+  .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+  }
+  .menu-icon{
+    width: 30px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0px;
+    margin: 8px;
+    border-radius: 8px;
+  }
+  .logo {
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 8%; /* Adjust this value as needed */
+    left: 8%;
+  }
+  
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+  .row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+  }
+  .col{
+    flex-basis: 50%;
+  }
+  h1{
+    color:#fff;
+    font-size: 100px;
+  }
+  p{
+    color:#fff;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  
+  button{
+    width: 180px;
+    color: #000;
+    font-size: 20px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: #000;
+    margin-top: 30px;
+  }
+   button:hover {
+     background-color: rgb(163, 211, 194);
+    color: rgb(158, 47, 192);
+  }
+  .card{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+  }
+  .card1{
+    background-image: url(PSLV_3.png);
+    margin: 10px 15px;
+    box-shadow: -5px -5px 16px rgba(241, 248, 245, 0.5);  /*offset value*/
+     
+   }
+   .card2{
+    background-image: url(somanath-isro.png);
+    margin: 10px 15px;
+    box-shadow: 5px 5px 16px #fff;  /*offset value*/
+   }
+   .card3{
+    background-image: url(chandrayaan3.png);
+    margin: 10px 15px;
+    box-shadow: -5px -5px 16px rgba(248, 250, 249, 0.5);  /*offset value*/
+   }
+   .card4{
+    background-image: url(Abdul-Kalam.png);
+    margin: 10px 15px;
+    box-shadow: -5px -5px 16px rgba(250, 250, 250, 0.5);  /*offset value*/
+   }
+  
+   .card:hover{
+    transform: translateY(-10px);
+  
+   }
+   h5{
+    color: #180808;
+    text-shadow: 0 0 5px #999;
+   }
+  
+   .card p{
+    text-shadow: 0 0 15px #000;
+    font-size:10px ;
+   }
+   
+  
+  .body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(space_bg.png.jpeg);
+  }
+  
+  #video-section {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
