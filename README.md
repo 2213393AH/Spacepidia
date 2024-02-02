@@ -22,6 +22,16 @@ __Interactive Mission Pages:__ Dive deep into individual mission details with in
 
 __Responsive Design:__ Access Spacepidia from various devices with a responsive design optimized for desktop, tablet, and mobile.
 
+__Contributing__
+Spacepidia is a collaborative effort by a team of dedicated individuals. Meet our team members:
+
+1. __Ahamad Ali__
+2. __Arjita Shahu__
+3. __Archana Keshari__
+4. __Amit Prapati__
+5. __Akarsh Singh__
+
+We welcome contributions from the community to enhance and improve Spacepidia. If you have suggestions, bug fixes, or new features to propose, please open an issue or submit a pull request on our GitHub repository.
 
 __Getting Started__
 
